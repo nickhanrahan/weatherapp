@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/nickhanrahan/weatherapp/issues"
   },
-  "homepage": "https://github.com/nickhanrahan/weatherapp#readme"
+  "homepage": "https://github.com/nickhanrahan/weatherapp#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.0",
+    "nodemon": "^2.0.14",
+    "style-loader": "^3.3.1"
+  }
 }
