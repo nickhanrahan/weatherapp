@@ -4,6 +4,9 @@
   "description": "Display weather information from areas around the world.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run server & npm run build-dev",
+    "server": "nodemon server/index.js",
+    "build-dev": "webpack --config webpack.dev-config.js --watch",
     "test": "test"
   },
   "repository": {
