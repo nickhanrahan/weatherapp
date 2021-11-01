@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from './app.jsx';
 
 const SearchForm = () => {
+  const globalData = useContext(GlobalContext);
+
+  const handleSearchChange = (event) => {
+    globalData.dispatch({ type: 'updateSearchStr', data: event.target.value });
+  }
+
   return (
     <div className="search-form-ctr">
       <form className="search-form">
-        <input className="search-input"></input>
+        <input className="search-input" type="text" placeholder="Search cities..." value={globalData.searchStr} onChange={handleSearchChange}></input>
         <button type="submit" className="search-submit">Search</button>
         <div className="selects-ctr">
           <div className="select-country-ctr">

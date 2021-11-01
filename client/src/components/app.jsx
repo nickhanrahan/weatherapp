@@ -2,13 +2,13 @@ import React, { useReducer } from 'react';
 import SearchForm from './searchForm.jsx';
 
 const initialState = {
-  idk: '',
+  searchStr: '',
 }
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'updateIdk':
-      return { ...state, idk: action.data };
+    case 'updateSearchStr':
+      return { ...state, searchStr: action.data };
     default:
       return state;
   }
