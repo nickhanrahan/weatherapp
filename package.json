@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Display weather information from areas around the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickhanrahan/weatherapp.git"
+  },
+  "author": "nh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickhanrahan/weatherapp/issues"
+  },
+  "homepage": "https://github.com/nickhanrahan/weatherapp#readme"
+}
