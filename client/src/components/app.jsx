@@ -3,12 +3,15 @@ import SearchForm from './searchForm.jsx';
 
 const initialState = {
   searchStr: '',
+  searchResults: [],
 }
 
 const reducer = (state, action) => {
   switch (action.type) {
     case 'updateSearchStr':
       return { ...state, searchStr: action.data };
+    case 'updateResults':
+      return { ...state, searchResults: action.data };
     default:
       return state;
   }

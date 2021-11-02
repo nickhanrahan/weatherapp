@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from './app.jsx';
+import axios from 'axios';
 
 const SearchForm = () => {
   const globalData = useContext(GlobalContext);
@@ -8,9 +9,20 @@ const SearchForm = () => {
     globalData.dispatch({ type: 'updateSearchStr', data: event.target.value });
   }
 
+  const submitSearch = (event) => {
+    event.preventDefault();
+    axios.get(`/search?q=${globalData.state.searchStr}`)
+      .then((res) => {
+        globalData.dispatch({ type: 'updateResults', data: res.data })
+      })
+      .catch((err) => {
+        console.log('ERR: ', err);
+      });
+  }
+
   return (
     <div className="search-form-ctr">
-      <form className="search-form">
+      <form className="search-form" onSubmit={submitSearch}>
         <input className="search-input" type="text" placeholder="Search cities..." value={globalData.searchStr} onChange={handleSearchChange}></input>
         <button type="submit" className="search-submit">Search</button>
         <div className="selects-ctr">
