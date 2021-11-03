@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from './app.jsx';
 import axios from 'axios';
+import './style/searchForm.css';
 
 const SearchForm = () => {
   const globalData = useContext(GlobalContext);
@@ -23,8 +24,10 @@ const SearchForm = () => {
   return (
     <div className="search-form-ctr">
       <form className="search-form" onSubmit={submitSearch}>
-        <input className="search-input" type="text" placeholder="Search cities..." value={globalData.searchStr} onChange={handleSearchChange}></input>
-        <button type="submit" className="search-submit">Search</button>
+        <div className="search-input-ctr">
+          <input className="search-input" type="text" placeholder="Search cities..." value={globalData.searchStr} onChange={handleSearchChange}></input>
+          <button type="submit" className="search-submit">Search</button>
+        </div>
         <div className="selects-ctr">
           <div className="select-country-ctr">
             <label htmlFor="select-country">Select a Country:</label>

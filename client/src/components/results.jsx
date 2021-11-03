@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import CityResult from './cityResult.jsx';
 import { GlobalContext } from './app.jsx';
+import './style/results.css';
 
 const Results = () => {
   const globalData = useContext(GlobalContext);

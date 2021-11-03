@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 import SearchForm from './searchForm.jsx';
 import Results from './results.jsx';
+import './style/app.css';
 
 const initialState = {
   searchStr: '',
@@ -25,7 +26,9 @@ const App = () => {
   return (
     <div className="global">
       <GlobalContext.Provider value={{ state, dispatch }}>
-        <h1>Would You Like to Know the Weather?</h1>
+        <div className="main-title">
+          <h1>Would You Like to Know the Weather?</h1>
+        </div>
         <SearchForm />
         <Results />
       </GlobalContext.Provider>

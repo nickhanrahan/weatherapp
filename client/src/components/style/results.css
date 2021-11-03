@@ -1,0 +1,31 @@
+.results-table {
+  margin: 10px;
+  padding: 10px;
+}
+
+.results-titles, .city-result-ctr {
+  display: flex;
+}
+
+.results-titles {
+  border-bottom: 2px solid #000;
+}
+
+.results-1-6 {
+  width: 15%;
+}
+.results-2-6 {
+  width: 25%;
+}
+.results-3-6 {
+  width: 15%;
+}
+.results-4-6 {
+  width: 15%;
+}
+.results-5-6 {
+  width: 15%;
+}
+.results-6-6 {
+  width: 15%;
+}

@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  text-align: center;
+  padding: 30px;
+  padding-top: 200px;
+}
