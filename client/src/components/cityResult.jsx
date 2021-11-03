@@ -11,7 +11,7 @@ const CityResult = ({ city }) => {
 
   return (
     <>
-      <div className="city-result-ctr" onClick={() => toggleOpen()} >
+      <div className="city-result-ctr" onClick={toggleOpen} >
         <div className="results-1-6">{city.id}</div>
         <div className="results-2-6">{city.name}</div>
         <div className="results-3-6">{city.state}</div>

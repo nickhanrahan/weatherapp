@@ -10,6 +10,9 @@ const Forecast = ({ isOpen, toggleOpen }) => {
     <>
       <div className="forecast-overlay"></div>
       <div className="forecast-window">
+        <div className="forecast-top">
+          <button className="forecast-close-btn" onClick={toggleOpen} >X</button>
+        </div>
         <div className="forecast-ctr">
         idk
         </div>
