@@ -12,20 +12,30 @@
 }
 
 .results-1-6 {
+  margin: 5px;
   width: 15%;
 }
 .results-2-6 {
+  margin: 5px;
   width: 25%;
 }
 .results-3-6 {
+  margin: 5px;
   width: 15%;
 }
 .results-4-6 {
+  margin: 5px;
   width: 15%;
 }
 .results-5-6 {
+  margin: 5px;
   width: 15%;
 }
 .results-6-6 {
+  margin: 5px;
   width: 15%;
+}
+
+.city-result-ctr {
+  border-bottom: 1px solid #000;
 }

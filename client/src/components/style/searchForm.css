@@ -18,3 +18,8 @@ button.search-submit {
   padding: 0px 20px;
   margin: 5px;
 }
+
+.selects-ctr {
+  display: flex;
+  justify-content: center;
+}
