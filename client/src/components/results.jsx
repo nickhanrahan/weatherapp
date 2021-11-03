@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CityResult from './cityResult.jsx';
 import { GlobalContext } from './app.jsx';
-
 
 const Results = () => {
   const globalData = useContext(GlobalContext);
@@ -15,7 +15,11 @@ const Results = () => {
           <div className="results-5-6">Longitude</div>
           <div className="results-6-6">Latitude</div>
         </div>
-        <div className="results-cities"></div>
+        <div className="results-cities">
+          {globalData.state.searchResults.map((city) => (
+            <CityResult key={city.id} city={city}/>
+          ))}
+        </div>
       </div>
     </div>
   )
