@@ -19,7 +19,7 @@ const CityResult = ({ city }) => {
         <div className="results-5-6">{city.coord.lon}</div>
         <div className="results-6-6">{city.coord.lat}</div>
       </div>
-      <Forecast isOpen={isOpen} toggleOpen={toggleOpen} />
+      <Forecast isOpen={isOpen} toggleOpen={toggleOpen} city={city} />
     </>
   )
 }
