@@ -40,6 +40,11 @@
   border: 1px solid;
 }
 
+.forecast-close-btn:hover {
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
 .forecast-main {
   height: 150px;
 }
@@ -70,7 +75,7 @@
 .forecast-cards {
   display: flex;
   overflow: scroll;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 
 .forecast-card-ctr {
@@ -98,5 +103,27 @@
 
 .forecast-icon-ctr {
   margin: auto;
+}
+
+.hourly-cards {
+  display: flex;
+  overflow: scroll;
+  padding: 10px 0px;
+}
+
+.hour-card-ctr {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 60px;
+}
+
+.hour-temp {
+  text-align: center;
+}
+
+.hour-time {
+  text-align: center;
+  font-size: 12px;
 }
 

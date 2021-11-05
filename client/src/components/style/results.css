@@ -39,3 +39,8 @@
 .city-result-ctr {
   border-bottom: 1px solid #000;
 }
+
+.city-result-ctr:hover {
+  cursor: pointer;
+  background-color: #e2e2e2;
+}

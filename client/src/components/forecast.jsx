@@ -2,7 +2,7 @@ import React,  { useState, useEffect, useContext } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import ForecastCard from './forecastCard.jsx';
-import Hourly from './hourly.jsx';
+import HourlyCard from './hourlyCard.jsx';
 import { GlobalContext } from './app.jsx';
 import './style/forecast.css';
 
@@ -22,7 +22,6 @@ const Forecast = ({ isOpen, toggleOpen, city }) => {
   useEffect(() => {
     axios.get(`/forecast/${city.coord.lat}/${city.coord.lon}`)
       .then((res) => {
-        console.log(res.data)
         setForecast(res.data);
       })
       .catch((err) => {
@@ -63,7 +62,11 @@ const Forecast = ({ isOpen, toggleOpen, city }) => {
         </div>
         <div className="forecast-hourly-title">Hourly:</div>
         <div className="hourly-cards">
-
+          {forecast.hourly &&
+            forecast.hourly.map((hour) => (
+              <HourlyCard key={`{hour.dt}`} hour={hour} />
+            ))
+          }
         </div>
       </div>
     </>,
