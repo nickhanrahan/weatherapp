@@ -25,7 +25,6 @@ const searchName = (req, res) => {
 const forecastCity = (req, res) => {
   let lat = req.params.lat;
   let lon = req.params.lon;
-  console.log(lat, lon);
   axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units={imperial}&appid=cf53893d93414d0e98cabc620021f64f`)
     .then((weather) => {
       res.status(200).send(weather.data);
