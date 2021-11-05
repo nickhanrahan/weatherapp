@@ -13,6 +13,7 @@
   top: 0%;
   left: 50%;
   width: 80%;
+  max-width: 900px;
   height: 65%;
   transform: translate(-50%, 25%);
   background-color: #fff;
@@ -37,5 +38,65 @@
   padding: 3px 6px;
   border-radius: 10px;
   border: 1px solid;
+}
+
+.forecast-main {
+  height: 150px;
+}
+
+.cur-ctr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-info {
+  padding: 20px;
+}
+
+.cur-date, .city-name {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.fc-cur-temp {
+  width: 200px;
+  font-size: 36px;;
+}
+
+.forecast-daily-title, .forecast-hourly-title {
+  font-size: 20px;
+}
+
+.forecast-cards {
+  display: flex;
+  overflow: scroll;
+  padding: 5px 0px;
+}
+
+.forecast-card-ctr {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: 120px;
+}
+
+.fc-low-high {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.forecast-temp {
+  font-size: 24px;
+  text-align: center;
+}
+
+.fc-date {
+  font-size: 20px;
+  text-align: center;
+}
+
+.forecast-icon-ctr {
+  margin: auto;
 }
 

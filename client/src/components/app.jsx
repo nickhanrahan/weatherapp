@@ -6,6 +6,12 @@ import './style/app.css';
 const initialState = {
   searchStr: '',
   searchResults: [],
+  convertKtoF: function(num) {
+    if (isNaN(num)) {
+      return '-'
+    }
+    return Math.round(((num - 273.15) * (9 / 5) + 32) * 10) / 10;
+  }
 }
 
 const reducer = (state, action) => {

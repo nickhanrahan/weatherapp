@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get('/search', searchName);
 
-app.get('/forecast/:id', forecastCity)
+app.get('/forecast/:lat/:lon', forecastCity)
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
